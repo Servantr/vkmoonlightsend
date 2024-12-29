@@ -1,0 +1,5 @@
+sqlite3
+sequelize
+vk-io
+discord.js
+xhr2
