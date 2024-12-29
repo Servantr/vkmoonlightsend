@@ -2,7 +2,7 @@
 	"name": "vkmoonlightsend",
 	"private": true,
 	"scripts": {
-		"build": "tsc",
+		"build": "tsc && cp .env build/.env",
 		"watch": "tsc -w",
 		"start": "node --enable-source-maps build/main.js",
 		"dev": "NODE_ENV=dev bun run --watch src/index.ts"
