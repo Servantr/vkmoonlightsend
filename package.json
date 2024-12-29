@@ -1,0 +1,20 @@
+{
+	"name": "vkmoonlightsend",
+	"private": true,
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc -w",
+		"start": "node --enable-source-maps build/main.js",
+		"dev": "NODE_ENV=dev bun run --watch src/index.ts"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.7",
+		"vk-io": "^4.9.1"
+	}
+}
