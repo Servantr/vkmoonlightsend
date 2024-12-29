@@ -77,7 +77,7 @@ vk.updates.on('wall_post_new', async ({ wall }: WallPostContext) => {
 	const mailings = await getMailings()
 
 	for (const mailing of mailings) {
-		if (!text.includes(mailing.name)) {
+		if (!text.toLowerCase().includes(mailing.name.toLowerCase())) {
 			continue
 		}
 
